@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+    defaultConfig {
+//        applicationId "com.proxymit.robospice.retrofit"
+        minSdkVersion 9
+        targetSdkVersion 21
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            zipAlignEnabled true
+        }
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+    }
+    productFlavors {
+    }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.+'
+    compile files('libs/commons-io-2.4.jar')
+    compile files('libs/robospice-1.4.14.jar')
+    compile files('libs/robospice-cache-1.4.14.jar')
+    compile 'com.squareup.retrofit:retrofit:1.+'
+    compile 'com.squareup.okio:okio:1.+'
+    compile 'com.squareup.okhttp:okhttp:2.+'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.+'
+}

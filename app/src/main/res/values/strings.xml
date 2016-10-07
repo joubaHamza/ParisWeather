@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ParisWeather</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="min_temperature">%s F</string>
+    <string name="max_temperature">%s F</string>
+    <string name="speed">Vitesse : %s</string>
+    <string name="humidity">Humidité : %s</string>
+    <string name="clouds">Nuages : %s</string>
+    <string name="pressure">Pression : %s</string>
+    <string name="min_temperature_detail"> Min : %s F</string>
+    <string name="max_temperature_detail"> Max : %s F</string>
+    <string name="day_temperature_detail"> Jour : %s F</string>
+    <string name="night_temperature_detail"> Nuit : %s F</string>
+    <string name="even_temperature_detail"> Midi : %s F</string>
+    <string name="morn_temperature_detail"> Matin : %s F</string>
+    <string name="previous"><![CDATA[<]]></string>
+    <string name="next"><![CDATA[>]]></string>
+    <string name="finish_confirm">Vous voulez quitter l\'application</string>
+    <string name="YES">Oui</string>
+    <string name="NO">Non</string>
+    <string name="erreur_Ws">Une erreur est survenu, Veuillez vérifier votre connexion internet</string>
+    <string name="OK">OK</string>
+    <string name="advice">Glisser pour rafraîchir</string>
+
+</resources>
